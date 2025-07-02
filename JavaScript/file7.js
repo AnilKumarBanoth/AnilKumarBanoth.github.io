@@ -75,13 +75,18 @@ const product =[
     {id:1, name:"laptop", price:50000, quantity:2},
     {id:2, name:"mobile", price:20000, quantity:5},
     {id:3, name:"tablet", price:30000, quantity:3},
+    {id:4, name:"watch", price:10000, quantity:1},
 
 ];
 function addToCart(id){
-    cart= {...cart,[id]: 1};
+    cart= {...cart,[id]: 6};
 }
 
 addToCart(1)
-
+console.log(cart)
+addToCart(2)
 addToCart(3)
+addToCart(4)
+
+
 console.log(cart)
